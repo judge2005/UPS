@@ -8,7 +8,7 @@
 #ifndef LIBRARIES_UPS_UPS_H_
 #define LIBRARIES_UPS_UPS_H_
 
-#include <arduino.h>
+#include <Arduino.h>
 #include <SafeMCP23017.h>
 #include <USBRating.h>
 
