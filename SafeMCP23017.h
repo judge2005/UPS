@@ -8,7 +8,7 @@
 #ifndef LIBRARIES_UPS_SAFEMCP23017_H_
 #define LIBRARIES_UPS_SAFEMCP23017_H_
 
-#include <arduino.h>
+#include <Arduino.h>
 #include <Adafruit_MCP23017.h>
 
 class SafeMCP23017 {
