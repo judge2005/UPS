@@ -11,7 +11,7 @@ const byte HI_CHGpin = 0;	// Write: LO = 100mA (default), HI = 500mA
 const byte V5_ENABLEpin = 1;	// Write: LO = disabled, HI = enabled (default)
 const byte VBUS_DETECTpin = 2; // Read: LO = USB disconnected (running on battery), HI = USB connected
 
-bool UPS::begin() {
+void UPS::begin() {
 	mcp.pinMode(VBUS_DETECTpin, INPUT);
 	mcp.pullUp(VBUS_DETECTpin, LOW);
 	vbus = mcp.digitalRead(VBUS_DETECTpin, 1);

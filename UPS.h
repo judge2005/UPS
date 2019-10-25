@@ -17,7 +17,7 @@ public:
 	UPS(SafeMCP23017& mcp) : mcp(mcp), rate("100mA") {
 	}
 
-	bool begin();
+	void begin();
 
 	bool rateChanged(byte pref, USBRating &rating);
 	bool vBusChanged();
